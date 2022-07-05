@@ -24,3 +24,54 @@ Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
  */
+
+/*
+steps__
+aggangio elementi globali per stampare in pagina
+poi costruisco il array di oggetti
+lo stampo in pagina
+*/
+//variabili globali
+const card = document.getElementById('card');
+
+//array di oggetti
+
+const team = [
+    {
+        name: 'Wayne',
+        surname: 'Barnett',
+        role: 'Founder_and_CEO',
+        image: 'wayne-barnett-founder-ceo.jpg',
+    },
+    {
+        name: 'Angela',
+        surname: 'Carroll',
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg',
+    },
+    {
+        name: 'Walter',
+        surname: 'Gordon',
+        role: 'Office Manager ',
+        image: 'walter-gordon-office-manager.jpg',
+    },
+    {
+        name: 'Angela',
+        surname: 'Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg',
+    },
+    {
+        name: 'Scott',
+        surname: 'Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg',
+    },
+    {
+        name: 'Barbara',
+        surname: 'Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg ',
+    }
+]
+console.log(team)
