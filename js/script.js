@@ -38,40 +38,51 @@ const card = document.getElementById('card');
 
 const team = [
     {
-        name: 'Wayne',
-        surname: 'Barnett',
-        role: 'Founder_and_CEO',
-        image: 'wayne-barnett-founder-ceo.jpg',
+        name: 'Wayne ',
+        surname: ' Barnett ',
+        role: ' Founder_and_CEO ',
+        image: ' wayne-barnett-founder-ceo.jpg',
     },
     {
-        name: 'Angela',
-        surname: 'Carroll',
-        role: 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg',
+        name: 'Angela ',
+        surname: ' Carroll ',
+        role: ' Chief Editor ',
+        image: ' angela-caroll-chief-editor.jpg',
     },
     {
-        name: 'Walter',
-        surname: 'Gordon',
-        role: 'Office Manager ',
-        image: 'walter-gordon-office-manager.jpg',
+        name: 'Walter ',
+        surname: ' Gordon ',
+        role: ' Office Manager ',
+        image: ' walter-gordon-office-manager.jpg',
     },
     {
-        name: 'Angela',
-        surname: 'Lopez',
-        role: 'Social Media Manager',
-        image: 'angela-lopez-social-media-manager.jpg',
+        name: 'Angela ',
+        surname: 'Lopez ',
+        role: ' Social Media Manager ',
+        image: ' angela-lopez-social-media-manager.jpg',
     },
     {
-        name: 'Scott',
-        surname: 'Estrada',
-        role: 'Developer',
-        image: 'scott-estrada-developer.jpg',
+        name: 'Scott ',
+        surname: 'Estrada ',
+        role: ' Developer ',
+        image: ' scott-estrada-developer.jpg',
     },
     {
-        name: 'Barbara',
-        surname: 'Ramos',
-        role: 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg ',
+        name: 'Barbara ',
+        surname: 'Ramos ',
+        role: ' Graphic Designer ',
+        image: ' barbara-ramos-graphic-designer.jpg ',
     }
 ]
 console.log(team)
+//per stampare solo gli oggetti senza tutti l'array
+for (let i = 0; i < team.length; i++) {
+    console.log('----------------------')
+    console.log(team[i].name)
+    console.log(team[i].surname)
+    console.log(team[i].role)
+    console.log(team[i].image)
+
+    console.log('------tutto insieme------')
+    console.log(team[i].name + team[i].surname + team[i].role + team[i].image)
+}
