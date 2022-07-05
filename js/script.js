@@ -77,12 +77,5 @@ const team = [
 console.log(team)
 //per stampare solo gli oggetti senza tutti l'array
 for (let i = 0; i < team.length; i++) {
-    console.log('----------------------')
-    console.log(team[i].name)
-    console.log(team[i].surname)
-    console.log(team[i].role)
-    console.log(team[i].image)
-
-    console.log('------tutto insieme------')
     console.log(team[i].name + team[i].surname + team[i].role + team[i].image)
 }
