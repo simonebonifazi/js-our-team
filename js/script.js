@@ -32,7 +32,7 @@ poi costruisco il array di oggetti
 lo stampo in pagina
 */
 //variabili globali
-const card = document.getElementById('card');
+const deck = document.getElementById('deck');
 
 //array di oggetti
 
@@ -40,7 +40,7 @@ const team = [
     {
         name: 'Wayne ',
         surname: ' Barnett ',
-        role: ' Founder_and_CEO ',
+        role: ' Founder & CEO ',
         image: 'wayne-barnett-founder-ceo.jpg',
     },
     {
@@ -78,5 +78,5 @@ console.log(team)
 //per stampare solo gli oggetti senza tutto l'array
 for (let i = 0; i < team.length; i++) {
     console.log(team[i].name + team[i].surname + team[i].role + team[i].image);
-    card.innerHTML += `<li> ${team[i].name}${team[i].surname} ${team[i].role} <img src="img/${team[i].image}" alt="${team[i].name}${team[i].surname}"/></li>`
+    deck.innerHTML += `<li class="card"><img src="img/${team[i].image}" alt="${team[i].name}${team[i].surname}"/> <div class="card-description"> <span class="name">${team[i].name} ${team[i].surname}</span> <span class="role">${team[i].role}</span></div> </li>`
 }
