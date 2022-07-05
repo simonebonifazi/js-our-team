@@ -41,41 +41,42 @@ const team = [
         name: 'Wayne ',
         surname: ' Barnett ',
         role: ' Founder_and_CEO ',
-        image: ' wayne-barnett-founder-ceo.jpg',
+        image: 'wayne-barnett-founder-ceo.jpg',
     },
     {
         name: 'Angela ',
         surname: ' Carroll ',
         role: ' Chief Editor ',
-        image: ' angela-caroll-chief-editor.jpg',
+        image: 'angela-caroll-chief-editor.jpg',
     },
     {
         name: 'Walter ',
         surname: ' Gordon ',
         role: ' Office Manager ',
-        image: ' walter-gordon-office-manager.jpg',
+        image: 'walter-gordon-office-manager.jpg',
     },
     {
         name: 'Angela ',
         surname: 'Lopez ',
         role: ' Social Media Manager ',
-        image: ' angela-lopez-social-media-manager.jpg',
+        image: 'angela-lopez-social-media-manager.jpg',
     },
     {
         name: 'Scott ',
         surname: 'Estrada ',
         role: ' Developer ',
-        image: ' scott-estrada-developer.jpg',
+        image: 'scott-estrada-developer.jpg',
     },
     {
         name: 'Barbara ',
         surname: 'Ramos ',
         role: ' Graphic Designer ',
-        image: ' barbara-ramos-graphic-designer.jpg ',
+        image: 'barbara-ramos-graphic-designer.jpg ',
     }
 ]
 console.log(team)
-//per stampare solo gli oggetti senza tutti l'array
+//per stampare solo gli oggetti senza tutto l'array
 for (let i = 0; i < team.length; i++) {
-    console.log(team[i].name + team[i].surname + team[i].role + team[i].image)
+    console.log(team[i].name + team[i].surname + team[i].role + team[i].image);
+    card.innerHTML += `<li> ${team[i].name}${team[i].surname} ${team[i].role} <img src="img/${team[i].image}" alt="${team[i].name}${team[i].surname}"/></li>`
 }
